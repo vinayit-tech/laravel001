@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
+//added to git
 Route::get('/home/{name?}', function ($name,) {
     $data=compact('name');
     return view('home')->with ($data);
